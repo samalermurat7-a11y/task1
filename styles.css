@@ -87,7 +87,7 @@ html, body {
 .container {
   min-height: 100%;
   position: relative;
-  padding-bottom: 60px; /* место под футер */
+  padding-bottom: 60px; 
   box-sizing: border-box;
 }
 
