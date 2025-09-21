@@ -4,23 +4,102 @@
   <title>Layout</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header.header {
+      text-align: center;
+      padding: 16px 0;
+    }
+    .top-nav {
+      background: #800000; 
+      padding: 10px 0;
+      margin: 12px 0;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .top-nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 700;
+      color: #fff; 
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .top-nav a:hover {
+      color: #ffd700; 
+      background: #a52a2a; 
+    }
+
+    main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 8px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: #800000;
+    }
+
+    .sidebar a:hover {
+      color: #ffd700;
+    }
+
+    .aside {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+
+    footer.footer {
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
 
     <header class="header">
       <h1>My Website</h1>
+      <div class="top-nav">
+        <a href="task1.html">task 1</a>
+        <a href="task2.html">task 2</a>
+        <a href="task3.html">task 3</a>
+      </div>
     </header>
 
-    <div class="top-nav">
-      <a href="task1.html">task 1</a>
-      <a href="task2.html">task 2</a>
-      <a href="task3.html">task 3</a>
-      <a href="task4.html">task 4</a>
-    </div>
-
     <main>
-    
       <div class="sidebar">
         <h3>Menu</h3>
         <ul>
@@ -33,19 +112,14 @@
 
       <aside class="aside">
         <h2>Aside</h2>
-         <p>
-      My Website 
-        </p>
-       <p>
-      Tribute to Dinmukhamed Konayev 
-        </p>
-        <p>
-        CSS Table and FORM 
-        </p>
+        <p>My Website</p>
+        <p>Tribute to Dinmukhamed Konayev</p>
+        <p>CSS Table and FORM</p>
       </aside>
 
       <div class="clearfix"></div>
     </main>
+
     <footer class="footer">
       © 2025 My Website | All rights reserved
     </footer>
