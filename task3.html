@@ -1,11 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title> Table & Form</title>
+  <title>Table & Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <style>
-    main { text-align: center; padding: 20px; }
+    body {
+      font-family: Roboto, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header.header {
+      text-align: center;
+      padding: 16px 0;
+    }
+
+    .top-nav {
+      background: #800000; 
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    .top-nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 700;
+      color: #fff; 
+      transition: color 0.2s;
+    }
+    .top-nav a:hover {
+      color: #ffd700; 
+    }
+
+    main { 
+      text-align: center; 
+      padding: 20px; 
+    }
 
     table {
       border-collapse: collapse;
@@ -65,7 +95,12 @@
   <div class="container">
 
     <header class="header">
-      <h1> Table & Form</h1>
+      <h1>Table & Form</h1>
+      <div class="top-nav">
+        <a href="task1.html">task 1</a>
+        <a href="task2.html">task 2</a>
+        <a href="task3.html">task 3</a>
+      </div>
     </header>
 
     <main>
@@ -90,6 +125,7 @@
           <td>Guldauren</td><td>89</td><td>93</td><td>97</td>
         </tr>
       </table>
+
       <form>
         <h2 style="text-align:center; color:#800000;">Feedback Form</h2>
 
@@ -106,14 +142,14 @@
           <option>Student</option>
         </select>
 
-       <label>Do you like this course?</label>
-<div class="radio-group">
-  <input type="radio" id="yes" name="like" value="Yes">
-  <label for="yes">Yes, I like it</label>
+        <label>Do you like this course?</label>
+        <div class="radio-group">
+          <input type="radio" id="yes" name="like" value="Yes">
+          <label for="yes">Yes, I like it</label>
 
-  <input type="radio" id="no" name="like" value="No">
-  <label for="no">No, I don’t like it</label>
-</div>
+          <input type="radio" id="no" name="like" value="No">
+          <label for="no">No, I don’t like it</label>
+        </div>
 
         <label for="comments">Comments:</label>
         <textarea id="comments" name="comments"></textarea>
